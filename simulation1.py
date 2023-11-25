@@ -1,12 +1,12 @@
-from .models.geneticAlgo import GeneticAlgorithm
+from models.geneticAlgo import GeneticAlgorithm
 from utils import create_and_display_graph
 from utils import compute_accessible_resources
 from utils import activate_edges_and_plot
 from utils import calculate_average_resources
 from utils import fitness
 from utils import save_simulation_results
-from .models.simAnnealing import SimulatedAnnealing 
-from .models.particleSwarming import ParticleSwarmOptimization
+from models.simAnnealing import SimulatedAnnealing 
+from models.particleSwarming import ParticleSwarmOptimization
 
 total_res = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13}
 G = create_and_display_graph(total_res, num_nodes=500, p=0.015, ba_graph=False, m=3, display_graph=False, display_nodes=False)
