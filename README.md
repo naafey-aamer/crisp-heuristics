@@ -5,6 +5,6 @@ Optimizing Resource Sharing Graphs Using Heuristic Algorithms
 
 The results are as follows:
 
-![Genetic Algorithm](results/GA_sim1.png)
-![Simulated Annealing](results/SA_sim1.png)
-![Particle Swarming Optimization](results/PSO_sim1.png)
+![### **Genetic Algorithm** ### ](results/GA_sim1.png)
+![**Simulated Annealing**](results/SA_sim1.png)
+![**Particle Swarming Optimization**](results/PSO_sim1.png)
