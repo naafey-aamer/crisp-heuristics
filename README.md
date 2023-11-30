@@ -13,3 +13,6 @@ The results are as follows:
 
 ### **Particle Swarming Optimization** ###
 ![**Particle Swarming Optimization**](results/PSO_sim1.png)
+
+### **Tabu Search** ###
+![**Particle Swarming Optimization**](results/TS_sim1.png)
