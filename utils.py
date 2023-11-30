@@ -3,6 +3,7 @@ import random
 import matplotlib.pyplot as plt
 from collections import defaultdict
 import pandas as pd
+import os
 
 #########################     GRAPH INITIALIZATION  ####################################
 def create_and_display_graph(total_resources, num_nodes=10, p=0.01, ba_graph=True, m=3, display_graph = True, display_nodes = True):
@@ -144,7 +145,7 @@ def calculate_average_resources(activated_edges, G):
 def save_simulation_results(G, best_sol_per_gen, best_fitness, average_resources_per_node, activated_edges, execution_time, filename):
     # Create a figure with subplots
     fig, axs = plt.subplots(1, 3, figsize=(15, 5))
-
+    
     # Subplot 1: Network with Activated Edges
     axs[0].set_title('Network with Activated Edges (Best Individual)')
     pos = nx.spring_layout(G)
@@ -185,15 +186,9 @@ def save_simulation_results(G, best_sol_per_gen, best_fitness, average_resources
 
     # Save the figure to the specified filename
     plt.tight_layout()
-    plt.savefig("results/" + filename)
+    # Replace 'filename' with the desired filename variable
+    plt.savefig(os.path.join("results", filename))
     plt.close()  # Close the figure to prevent display if not needed
-
-
-
-# Example usage:
-# display_simulation_results(G, best_sol_per_gen, best_fitness, average_resources_per_node, activated_edges)
-
-
 
 
 
