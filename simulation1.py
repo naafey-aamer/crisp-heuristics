@@ -12,6 +12,7 @@ import random
 # from models.antColonyOptimization import AntColonyOptimization
 
 
+
 total_res = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13}
 G = create_and_display_graph(total_res, num_nodes=550, p=0.013, ba_graph=False, m=3, display_graph=False, display_nodes=False)
 num_edges_at_end = G.number_of_edges()
